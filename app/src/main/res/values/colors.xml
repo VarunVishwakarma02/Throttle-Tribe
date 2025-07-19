@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="primary_color">#6C63FF</color>
+    <color name="primary_color_dark">#5A52D5</color>
+    <color name="secondary_color">#FF6B9D</color>
+
+    <!-- Background Colors -->
+    <color name="form_card_background">#1A1A1A</color>
+    <color name="social_button_background">#2A2A2A</color>
+
+    <!-- Text Colors -->
+    <color name="input_text_color">#FFFFFF</color>
+    <color name="input_hint_color">#B3FFFFFF</color>
+    <color name="secondary_text_color">#80FFFFFF</color>
+
+    <!-- UI Colors -->
+    <color name="input_stroke_color">#6C63FF</color>
+    <color name="icon_tint">#6C63FF</color>
+    <color name="divider_color">#40FFFFFF</color>
+</resources>

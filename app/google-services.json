@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "418174211634",
+    "project_id": "ridingwithstranger-5c720",
+    "storage_bucket": "ridingwithstranger-5c720.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418174211634:android:d839538647372d85784e2b",
+        "android_client_info": {
+          "package_name": "com.example.ridingwithstranger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwRHVeTRWeXguHFg8G6JoO_TrOKCDV7NU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

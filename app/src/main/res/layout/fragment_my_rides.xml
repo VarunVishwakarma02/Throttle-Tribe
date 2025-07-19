@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyRides">
+
+    <LinearLayout
+        android:id="@+id/layout_no_rides"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_create_ride"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:text="+"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:elevation="6dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your first ride"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginTop="16dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_rides"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:listitem="@layout/item_ride_card"/>
+
+</FrameLayout>

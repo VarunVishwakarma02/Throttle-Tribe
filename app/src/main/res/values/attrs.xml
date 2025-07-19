@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom attributes for form validation -->
+    <declare-styleable name="ValidationTextInput">
+        <attr name="validationType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="email" value="1" />
+            <enum name="phone" value="2" />
+            <enum name="password" value="3" />
+            <enum name="name" value="4" />
+        </attr>
+        <attr name="required" format="boolean" />
+        <attr name="minLength" format="integer" />
+        <attr name="maxLength" format="integer" />
+    </declare-styleable>
+</resources>

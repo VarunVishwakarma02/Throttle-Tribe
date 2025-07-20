@@ -1,6 +1,7 @@
 [versions]
 agp = "8.11.1"
 appcompatVersion = "1.6.1"
+circleimageview = "3.1.0"
 constraintlayoutVersion = "2.1.4"
 coreSplashscreen = "1.0.1"
 kotlin = "2.0.21"
@@ -26,6 +27,7 @@ androidx-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref
 androidx-constraintlayout-v214 = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayoutVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

@@ -21,13 +21,19 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.myrides -> {
+                R.id.myride -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragment_container, MyRides())
                         .commit()
                     true
                 }
                 // Add other navigation items here as needed
+                R.id.profile -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, Profile())
+                        .commit()
+                    true
+                }
                 else -> false
             }
         }

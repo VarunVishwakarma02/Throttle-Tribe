@@ -20,4 +20,21 @@
     <color name="input_stroke_color">#6C63FF</color>
     <color name="icon_tint">#6C63FF</color>
     <color name="divider_color">#40FFFFFF</color>
+
+    <!-- Primary Colors -->
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#F5F5F5</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- Status Colors -->
+    <color name="success_color">#4CAF50</color>
+    <color name="rating_color">#FF9800</color>
+    <color name="error_color">#F44336</color>
+    <color name="error_light">#FFEBEE</color>
 </resources>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="My Rides"
-        android:id="@+id/myrides"
-        android:icon="@drawable/myrides_navigation_bar"/>
-    <item android:title="Explore"
+    <item android:title="Explore Rides"
         android:id="@+id/explore"
         android:icon="@drawable/explore_navigation_bar"/>
+    <item android:title="My Ride"
+        android:id="@+id/myride"
+        android:icon="@drawable/myrides_navigation_bar"/>
     <item android:title="MarketPlace"
         android:id="@+id/marketplace"
         android:icon="@drawable/marketplace_navigation_bar"/>

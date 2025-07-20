@@ -21,13 +21,6 @@
             android:layout_marginBottom="32dp"
             android:elevation="8dp">
 
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:src="@drawable/ic_car"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="16dp"
-                app:tint="#FFFFFF" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -70,11 +63,11 @@
                     android:id="@+id/edit_source"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Source Location"
-                    android:inputType="text"
                     android:drawableStart="@drawable/ic_location_on"
                     android:drawablePadding="12dp"
-                    android:drawableTint="#4CAF50"/>
+                    android:drawableTint="#4CAF50"
+                    android:hint="Source Location"
+                    android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Destination Field -->
@@ -113,6 +106,47 @@
                     android:drawableTint="#FF9800"/>
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!-- Description Field - Fixed alignment -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:drawableStart="@drawable/ic_description"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="#9C27B0"
+                    android:hint="Trip Description"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:gravity="start"
+                    android:scrollbars="vertical"
+                    android:maxLines="6"
+                    android:lines="4"
+                    android:paddingTop="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Price Field - New addition -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_price_per_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_currency"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="#4CAF50"
+                    android:hint="Price Per Person"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
             <!-- Time Fields Row -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -133,7 +167,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Start Time"
-                        android:focusable="false"
+                        android:focusable="true"
                         android:drawableStart="@drawable/ic_schedule"
                         android:drawablePadding="12dp"
                         android:drawableTint="#2196F3"/>

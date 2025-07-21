@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Section with Profile and Trip Days -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <!-- Profile Photo -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_rider_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_navigation_bar"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/primary_color" />
+
+            <!-- Rider Info -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/tv_rider_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/tv_completed_trips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 trips completed"
+                    android:textSize="11sp"
+                    android:textColor="#666666" />
+
+            </LinearLayout>
+
+            <!-- Trip Days -->
+            <TextView
+                android:id="@+id/tv_trip_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 days"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"
+                android:background="@drawable/bg_trip_days"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp" />
+
+        </LinearLayout>
+
+        <!-- Route Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Route Icons and Lines -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginEnd="12dp">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/circle_green"
+                    android:layout_marginBottom="4dp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:background="#CCCCCC"
+                    android:layout_marginBottom="4dp" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/circle_red" />
+
+            </LinearLayout>
+
+            <!-- Location Details -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Source Location -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FROM"
+                        android:textSize="10sp"
+                        android:textColor="#999999"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_source_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Connaught Place, New Delhi"
+                        android:textSize="14sp"
+                        android:textColor="#333333"
+                        android:maxLines="2"
+                        android:ellipsize="end" />
+
+                </LinearLayout>
+
+                <!-- Destination Location -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TO"
+                        android:textSize="10sp"
+                        android:textColor="#999999"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_destination_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gurgaon Cyber City, Haryana"
+                        android:textSize="14sp"
+                        android:textColor="#333333"
+                        android:maxLines="2"
+                        android:ellipsize="end" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Price and Actions Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Price -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRICE"
+                    android:textSize="10sp"
+                    android:textColor="#999999"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_trip_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹450"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF5722" />
+
+            </LinearLayout>
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_more_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Details"
+                    android:textSize="12sp"
+                    android:textColor="@color/primary_color"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="@color/primary_color"
+                    app:backgroundTint="@android:color/transparent"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginEnd="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_join_trip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Join"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/primary_color"
+                    android:paddingHorizontal="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

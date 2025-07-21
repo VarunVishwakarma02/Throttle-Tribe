@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RidingWithStranger">
         <activity
-            android:name=".HomeScreen"
-            android:exported="false" />
-        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>

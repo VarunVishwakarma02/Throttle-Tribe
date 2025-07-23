@@ -34,12 +34,21 @@ class MainActivity : AppCompatActivity() {
                         .commit()
                     true
                 }
+                R.id.explore -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, Explore())
+                        .commit()
+                    true
+                }
                 else -> false
+
             }
         }
-        // Show MyRides fragment by default
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, MyRides())
-            .commit()
+        // Set default fragment
+        if(savedInstanceState == null){
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Explore())
+                .commit()
+        }
     }
 }
